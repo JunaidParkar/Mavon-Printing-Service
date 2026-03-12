@@ -14,7 +14,6 @@
     "lucide-react": "^0.577.0",
     "motion": "^12.35.2",
     "next": "16.1.6",
-    "postcss": "^8.5.8",
     "radix-ui": "^1.4.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -25,8 +24,10 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.1",
+    "autoprefixer": "^10.4.27",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "postcss": "^8.5.8",
     "tailwindcss": "^4.2.1"
   }
 }

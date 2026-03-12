@@ -1,6 +1,6 @@
 // import { Link, useNavigate } from 'react-router';
 import { ShoppingCart, Package, LogOut, User, Shield } from 'lucide-react';
-// import { Button } from '../ui/button';
+import { Button } from '../ui/button';
 // import { useCart } from '../../context/CartContext';
 // import { supabase } from '../../lib/supabase';
 import { useState, useEffect } from 'react';
@@ -70,21 +70,21 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* <Link to="/" className="flex items-center gap-2"> */}
+          <div className="flex items-center gap-2">
             <Package className="w-8 h-8 text-[#778da9]" />
             <div>
               <h1 className="text-xl font-bold text-[#e0e1dd]">MPS</h1>
               <p className="text-xs text-[#778da9]">Mavon Printing Service</p>
             </div>
-          {/* </Link> */}
+          </div>
 
           <nav className="hidden md:flex items-center gap-6">
-            {/* <Link to="/" className="text-[#e0e1dd] hover:text-[#778da9] transition-colors"> */}
+            <div className="text-[#e0e1dd] hover:text-[#778da9] transition-colors">
               Home
-            {/* </Link> */}
-            {/* <Link to="/products" className="text-[#e0e1dd] hover:text-[#778da9] transition-colors"> */}
+            </div>
+            <div className="text-[#e0e1dd] hover:text-[#778da9] transition-colors">
               Products
-            {/* </Link> */}
+            </div>
             {/* {user && (
               <Link to="/my-orders" className="text-[#e0e1dd] hover:text-[#778da9] transition-colors">
                 My Orders
@@ -132,11 +132,11 @@ export default function Header() {
                   onClick={() => navigate('/cart')}
                 >
                   <ShoppingCart className="w-5 h-5" />
-                  {cartCount > 0 && (
+                  {/* {cartCount > 0 && ( */}
                     <span className="absolute -top-1 -right-1 bg-[#778da9] text-[#0d1b2a] text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-                      {cartCount}
+                      {/* {cartCount} */}2
                     </span>
-                  )}
+                  {/* )} */}
                 </Button>
                 <Button onClick={() => navigate('/login')}>Login</Button>
               </>
